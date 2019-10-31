@@ -1,0 +1,204 @@
+
+
+
+.conteiner
+{
+  margin: 100px 100px 90px 90px;
+  display: block;
+  width: 95%;
+}
+.geral
+{
+  margin: 200px 120px 100px 500px; 
+  font-weight: 600px;
+}
+
+.linha
+{
+  display: inline-block;
+}
+
+.botao{
+  margin: 10px;
+  height: 250px;  
+  width: 250px;
+ 
+  border-radius: 5px;
+  display: inline-block;
+  transition: box-shadow 0.5s,
+              width 0.5s,
+              height 0.5s,
+              margin 0.5s;
+  z-index: 0;
+}
+
+.botao:hover
+{
+  margin: 0 px;
+  box-shadow: 0 0 30px #00000090;
+  width: 260px;
+  height: 260px;
+  z-index: 1;
+}
+
+.botaodeta{
+  margin: 10px;
+  height: 500px;  
+  width: 500px;
+ 
+  border-radius: 5px;
+  display: inline-block;
+  transition: box-shadow 0.5s,
+              width 0.5s,
+              height 0.5s,
+              margin 0.5s;
+  z-index: 0;
+}
+
+
+.botaol{
+  margin: 10px;
+  height: 250px;  
+  width: 350px;
+ 
+  border-radius: 5px;
+  display: inline-block;
+  transition: box-shadow 0.5s,
+              width 0.5s,
+              height 0.5s,
+              margin 0.5s;
+  z-index: 0;
+}
+
+.botaol:hover
+{
+  margin: 0 px;
+  box-shadow: 0 0 30px #00000090;
+  width: 340px;
+  height: 460px;
+  z-index: 1;
+}
+.botaold{
+  margin: 10px;
+  height: 250px;  
+  width: 350px;
+ 
+  border-radius: 5px;
+  display: inline-block;
+  transition: box-shadow 0.5s,
+              width 0.5s,
+              height 0.5s,
+              margin 0.5s;
+  z-index: 0;
+}
+
+.botaold:hover
+{
+  margin: 0 px;
+  box-shadow: 0 0 30px #00000090;
+  width: 440px;
+  height: 440px;
+  z-index: 1;
+}
+.botaolr{
+  margin: 10px;
+  height: 250px;  
+  width: 300px;
+ 
+  border-radius: 5px;
+  display: inline-block;
+  transition: box-shadow 0.5s,
+              width 0.5s,
+              height 0.5s,
+              margin 0.5s;
+  z-index: 0;
+}
+
+.botaolr:hover
+{
+  margin: 0 px;
+  box-shadow: 0 0 30px #00000090;
+  width: 300px;
+  height: 260px;
+  z-index: 1;
+}
+
+
+.botaollargura{
+  margin: 10px;
+  height: 250px;  
+  width: 250px;
+ 
+  border-radius: 5px;
+  display: inline-block;
+  transition: box-shadow 0.5s,
+              width 0.5s,
+              height 0.5s,
+              margin 0.5s;
+  z-index: 0;
+}
+
+.botaolargura:hover
+{
+  margin: 0 px;
+  box-shadow: 0 0 30px #00000090;
+  width: 260px;
+  height: 460px;
+  z-index: 1;
+}
+
+.coluna
+{
+  display: block;
+  margin: auto;
+  padding: 0;
+  border: 0;
+}   
+
+#one{
+  background-color: #ed5858;
+  
+}
+
+#two
+{
+  background-color: #7de86d;
+}
+
+#three
+{
+  background-color: #f0e96c;
+  
+}
+
+#four
+{
+    background-color: #07254e;
+  
+
+  background-image: url("imagens/download2.png") ;
+  background-position: center;
+
+}
+
+#five
+{
+  background-color: #07254e;
+}
+#six
+{
+  background-color: #6e7e15;
+} 
+#seven
+{
+  background-color: #240c3b;
+}
+#eight
+{
+  background-color: #cf5e31;
+}
+
+#im2{
+    width: 100%;
+    height: 100%;
+}
