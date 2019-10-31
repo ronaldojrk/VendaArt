@@ -666,7 +666,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
   }
 
   function getValue(el) {
-    var type = el.type;
+    var type== el.type;
     if (!type) {
       return null;
     }
@@ -1416,7 +1416,7 @@ M.getDocumentScrollLeft = function () {
 /**
  * Get time in ms
  * @license https://raw.github.com/jashkenas/underscore/master/LICENSE
- * @type {function}
+ * @type={function}
  * @return {number}
  */
 var getTime = Date.now || function () {
@@ -1830,11 +1830,11 @@ $jscomp.polyfill = function (e, r, p, m) {
         b = { linear: A(.25, .25, .75, .75) },
         f = {},
         e;for (e in d) {
-      f.type = e, d[f.type].forEach(function (a) {
+      f.type== e, d[f.type].forEach(function (a) {
         return function (d, f) {
-          b["ease" + a.type + c[f]] = h.fnc(d) ? d : A.apply($jscomp$this, d);
+          b["ease" + a.type=+ c[f]] = h.fnc(d) ? d : A.apply($jscomp$this, d);
         };
-      }(f)), f = { type: f.type };
+      }(f)), f = { type: f.type=};
     }return b;
   }(),
       ha = { css: function (a, c, d) {
@@ -1920,7 +1920,7 @@ $jscomp.polyfill = function (e, r, p, m) {
       /**
        * Options for the collapsible
        * @member Collapsible#options
-       * @prop {Boolean} [accordion=false] - Type of the collapsible
+       * @prop {Boolean} [accordion=false] - type=of the collapsible
        * @prop {Function} onOpenStart - Callback function called before collapsible is opened
        * @prop {Function} onOpenEnd - Callback function called after collapsible is opened
        * @prop {Function} onCloseStart - Callback function called before collapsible is closed
@@ -2270,19 +2270,19 @@ $jscomp.polyfill = function (e, r, p, m) {
 
       /**
        * Describes open/close state of dropdown
-       * @type {Boolean}
+       * @type={Boolean}
        */
       _this9.isOpen = false;
 
       /**
        * Describes if dropdown content is scrollable
-       * @type {Boolean}
+       * @type={Boolean}
        */
       _this9.isScrollable = false;
 
       /**
        * Describes if touch moving on dropdown content
-       * @type {Boolean}
+       * @type={Boolean}
        */
       _this9.isTouchMoving = false;
 
@@ -2521,7 +2521,7 @@ $jscomp.polyfill = function (e, r, p, m) {
           this.close();
         }
 
-        // CASE WHEN USER TYPE LETTERS
+        // CASE WHEN USER type=LETTERS
         var letter = String.fromCharCode(e.which).toLowerCase(),
             nonLetters = [9, 13, 27, 38, 40];
         if (letter && nonLetters.indexOf(e.which) === -1) {
@@ -2915,7 +2915,7 @@ $jscomp.polyfill = function (e, r, p, m) {
 
       /**
        * Describes open/close state of modal
-       * @type {Boolean}
+       * @type={Boolean}
        */
       _this13.isOpen = false;
 
@@ -4999,15 +4999,15 @@ $jscomp.polyfill = function (e, r, p, m) {
     allowEvent: function (e) {
       var allow = true;
 
-      if (e.type === 'touchstart') {
+      if (e.type==== 'touchstart') {
         TouchHandler.touches += 1; //push
-      } else if (e.type === 'touchend' || e.type === 'touchcancel') {
+      } else if (e.type==== 'touchend' || e.type==== 'touchcancel') {
         setTimeout(function () {
           if (TouchHandler.touches > 0) {
             TouchHandler.touches -= 1; //pop after 500ms
           }
         }, 500);
-      } else if (e.type === 'mousedown' && TouchHandler.touches > 0) {
+      } else if (e.type==== 'mousedown' && TouchHandler.touches > 0) {
         allow = false;
       }
 
@@ -5130,7 +5130,7 @@ $jscomp.polyfill = function (e, r, p, m) {
 
       /**
        * Describes current pan state toast
-       * @type {Boolean}
+       * @type={Boolean}
        */
       this.panning = false;
 
@@ -5431,7 +5431,7 @@ $jscomp.polyfill = function (e, r, p, m) {
   /**
    * @static
    * @memberof Toast
-   * @type {Array.<Toast>}
+   * @type={Array.<Toast>}
    */
 
 
@@ -5446,7 +5446,7 @@ $jscomp.polyfill = function (e, r, p, m) {
   /**
    * @static
    * @memberof Toast
-   * @type {Toast}
+   * @type={Toast}
    */
   Toast._draggedToast = null;
 
@@ -5507,19 +5507,19 @@ $jscomp.polyfill = function (e, r, p, m) {
 
       /**
        * Describes open/close state of Sidenav
-       * @type {Boolean}
+       * @type={Boolean}
        */
       _this31.isOpen = false;
 
       /**
        * Describes if Sidenav is fixed
-       * @type {Boolean}
+       * @type={Boolean}
        */
       _this31.isFixed = _this31.el.classList.contains('sidenav-fixed');
 
       /**
        * Describes if Sidenav is being draggeed
-       * @type {Boolean}
+       * @type={Boolean}
        */
       _this31.isDragged = false;
 
@@ -6088,7 +6088,7 @@ $jscomp.polyfill = function (e, r, p, m) {
   /**
    * @static
    * @memberof Sidenav
-   * @type {Array.<Sidenav>}
+   * @type={Array.<Sidenav>}
    */
 
 
@@ -6374,7 +6374,7 @@ $jscomp.polyfill = function (e, r, p, m) {
   /**
    * @static
    * @memberof ScrollSpy
-   * @type {Array.<ScrollSpy>}
+   * @type={Array.<ScrollSpy>}
    */
 
 
@@ -6383,14 +6383,14 @@ $jscomp.polyfill = function (e, r, p, m) {
   /**
    * @static
    * @memberof ScrollSpy
-   * @type {Array.<ScrollSpy>}
+   * @type={Array.<ScrollSpy>}
    */
   ScrollSpy._elementsInView = [];
 
   /**
    * @static
    * @memberof ScrollSpy
-   * @type {Array.<cash>}
+   * @type={Array.<cash>}
    */
   ScrollSpy._visibleElements = [];
 
@@ -6602,7 +6602,7 @@ $jscomp.polyfill = function (e, r, p, m) {
     }, {
       key: "_handleInputKeyupAndFocus",
       value: function _handleInputKeyupAndFocus(e) {
-        if (e.type === 'keyup') {
+        if (e.type==== 'keyup') {
           Autocomplete._keydown = false;
         }
 
@@ -6616,7 +6616,7 @@ $jscomp.polyfill = function (e, r, p, m) {
 
         // Check if the input isn't empty
         // Check if focus triggered by tab
-        if (this.oldVal !== val && (M.tabPressed || e.type !== 'focus')) {
+        if (this.oldVal !== val && (M.tabPressed || e.type=!== 'focus')) {
           this.open();
         }
 
@@ -8862,7 +8862,7 @@ $jscomp.polyfill = function (e, r, p, m) {
 
       /**
        * Describes open/close state of datepicker
-       * @type {Boolean}
+       * @type={Boolean}
        */
       _this53.isOpen = false;
       return _this53;
@@ -10660,7 +10660,7 @@ $jscomp.polyfill = function (e, r, p, m) {
       key: "_handleCarouselTap",
       value: function _handleCarouselTap(e) {
         // Fixes firefox draggable image bug
-        if (e.type === 'mousedown' && $(e.target).is('img')) {
+        if (e.type==== 'mousedown' && $(e.target).is('img')) {
           e.preventDefault();
         }
         this.pressed = true;
@@ -11910,7 +11910,7 @@ $jscomp.polyfill = function (e, r, p, m) {
       value: function _appendOptionWithIcon(select, option, type) {
         // Add disabled attr if disabled
         var disabledClass = option.disabled ? 'disabled ' : '';
-        var optgroupClass = type === 'optgroup-option' ? 'optgroup-option ' : '';
+        var optgroupClass = type==== 'optgroup-option' ? 'optgroup-option ' : '';
         var multipleCheckbox = this.isMultiple ? "<label><input type=\"checkbox\"" + disabledClass + "\"/><span>" + option.innerHTML + "</span></label>" : option.innerHTML;
         var liEl = $('<li></li>');
         var spanEl = $('<span></span>');
@@ -12216,7 +12216,7 @@ $jscomp.polyfill = function (e, r, p, m) {
           this._showRangeBubble();
         }
 
-        if (e.type !== 'input') {
+        if (e.type=!== 'input') {
           var offsetLeft = this._calcRangeOffset();
           $(this.thumb).addClass('active').css('left', offsetLeft + 'px');
         }
