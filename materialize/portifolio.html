@@ -5,6 +5,24 @@
     .nav-wrapper{
       background-color:cadetblue;
     }
+    #img1{
+      z-index: 0;
+      opacity: 1;
+      visibility: visible;
+      transform: translateX(262px) translateY(100px) translateX(0px) translateX(0px) translateZ(0px);
+    }
+    #img2{
+      transform: translateX(262px) translateY(100px) translateX(200px) translateZ(-200px);
+      z-index: -1;
+      opacity: 0.6;
+      visibility: visible;
+    }
+    #img3{
+      transform: translateX(262px) translateY(100px) translateX(400px) translateZ(-400px);
+      z-index: -2;
+      opacity: 0.2;
+      visibility: visible;
+    }
   </style>  
    
   <meta charset="UTF-8">
@@ -27,114 +45,111 @@
     </div>
   </nav>
 
-  <div class="conteiner">
-    <div class="carousel carousel-slider" style="height: 400px;">
-      
-      <a class="carousel-item" href="#three!"><img src="png/carousel1.jpg"></a>
-      <a class="carousel-item" href="#four!"><img src="png/carousel2.jpg"></a>
-      <a class="carousel-item" href="#four!"><img src="png/carousel3.jpg"></a>
+  <div class="conteiner" style="width: auto;">
+    <div class="carousel">
+      <a class="carousel-item" id="img1" href="#three!"><img src="png/carousel1.jpg"></a>
+      <a class="carousel-item" id="img2" href="#four!"><img src="png/carousel2.jpg"></a>
+      <a class="carousel-item" id="img3" href="#four!"><img src="png/carousel3.jpg"></a>
     </div>
   </div>
+  <!-- <div id="myCarousel" class="carousel carousel-slider" data-ride="carousel" data-interval="6000">
+      <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+          <div class="item active">
+              <img src="png/carousel1.jpg" class="img-responsive" />
+          </div>
+          <div class="item">
+              <img src="png/carousel2.jpg" class="img-responsive" />
+          </div>
+          <div class="item">
+              <img src="png/carousel3.jpg" class="img-responsive" />
+          </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Anterior</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Próximo</span>
+      </a>
+  </div> -->
 
-        
-  <!---- <a class="btn-floating pulse"><i class="material-icons">menu</i></a>
-  <a class="btn-floating btn-large pulse"><i class="material-icons">cloud</i></a>
-  <a class="btn-floating btn-large cyan pulse"><i class="material-icons">edit</i></a>
-  <p class="flow-text">I am Flow Text</p>
-      <blockquote>
-              This is an example quotation that uses the blockquote tag.
-            </blockquote>-->
-      <!--<div class="col s12 m8 offset-m2 l6 offset-l3">
-              <div class="card-panel grey lighten-5 z-depth-1">
-                <div class="row valign-wrapper">
-                  <div class="col s2">
-                    <img src="1.jpg" alt="" class="quadra responsive-img">  notice the "circle" class --
-                  </div>
-                  <div class="col s10">
-                    <span class="black-text">
-                      This is a square image. Add the "circle" class to it to make it appear circular.
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>-->
-  
-  <!--<p class="geral" > 
-          Portifolio
-          
-      </p>-->
-		<div class="conteiner" >
-      <link rel="stylesheet" href="css/estilo4cores.css">
-			<div class="linha">
-				<div class="coluna" >
+  <div class="conteiner" >
+    <link rel="stylesheet" href="css/estilo4cores.css">
+    <div class="linha">
+      <div class="coluna" >
 					<div id="one" class="botaol "  >
             <img id="im2"src="png/poster.jpg"> 
-            <span class="new badge red" data-badge-caption="">R$ 300,00<a href="detalhedoproduto.html">Detalhe</a></span>
+            <span class="new badge red" data-badge-caption="">R$ 300,00<a style="margin-left: 20px; color: white;" href="detalhedoproduto.html">Detalhes</a></span>
             <!--span class="badge" data-badge-caption="Menina segurando livro"></span-->
           </div>
           <div id="two" class="botaol" >
             <img id="im2"src="png/menina de oculos no sol new.png"> 
-            <span class="new badge red" data-badge-caption="">R$ 300,00<a href="detalhedoproduto.html">Detalhe</a></span>
+            <span class="new badge red" data-badge-caption="">R$ 300,00<a style="margin-left: 20px; color: white;" href="detalhedoproduto.html">Detalhes</a></span>
           </div>
           <div id="five" class="botaold">
             <img id="im2"src="png/deku.png"> 
-            <span class="new badge red" data-badge-caption="">R$ 300,00<a href="detalhedoproduto.html">Detalhe</a></span>
+            <span class="new badge red" data-badge-caption="">R$ 300,00<a style="margin-left: 20px; color: white;" href="detalhedoproduto.html">Detalhes</a></span>
           </div>
         </div> 
-      </br> 
+        <br /> 
 				<div class="coluna">
-					<div id="three" class="botaol">
+          <div id="three" class="botaol">
             <img id="im2"src="png/cara-delevingne-celebrity foto.png">
-            <span class="new badge red" data-badge-caption="">R$ 300,00<a href="detalhedoproduto.html">Detalhe</a></span>
+            <span class="new badge red" data-badge-caption="">R$ 300,00<a style="margin-left: 20px; color: white;" href="detalhedoproduto.html">Detalhes</a></span>
           </div>
           <div id="four" class="botaol" >
             <img id="im2"src="png/Job 3d 2d.png"> 
-            <span class="new badge red" data-badge-caption="">R$ 300,00<a href="detalhedoproduto.html">Detalhe</a></span>
+            <span class="new badge red" data-badge-caption="">R$ 300,00<a style="margin-left: 20px; color: white;" href="detalhedoproduto.html">Detalhes</a></span>
           </div>
           <div id="seven" class="botaold">
             <img id="im2"src="png/meu celular.jpg"> 
-            <span class="new badge red" data-badge-caption="">R$ 300,00<a href="detalhedoproduto.html">Detalhe</a></span>
+            <span class="new badge red" data-badge-caption="">R$ 300,00<a style="margin-left: 20px; color: white;" href="detalhedoproduto.html">Detalhes</a></span>
           </div>
         </div>
-      </br>
+        <br />
         <div class="coluna">
-					<div id="three" class="botaol">
+          <div id="three" class="botaol">
             <img id="im2"src="png/cubo.jpg">
-            <span class="new badge red" data-badge-caption="">R$ 300,00<a href="detalhedoproduto.html">Detalhe</a></span>
+            <span class="new badge red" data-badge-caption="">R$ 300,00<a style="margin-left: 20px; color: white;" href="detalhedoproduto.html">Detalhes</a></span>
           </div>
           <div id="four" class="botaold">
             <img id="im2"src="png/flor1.png">
-            <span class="new badge red" data-badge-caption="">R$ 300,00<a href="detalhedoproduto.html">Detalhe</a></span>
+            <span class="new badge red" data-badge-caption="">R$ 300,00<a style="margin-left: 20px; color: white;" href="detalhedoproduto.html">Detalhes</a></span>
           </div>
           <div id="seven" class="botaol">
             <img id="im2"src="png/Untitled-2.png">
-            <span class="new badge red" data-badge-caption="">R$ 300,00<a href="detalhedoproduto.html">Detalhe</a></span>
+            <span class="new badge red" data-badge-caption="">R$ 300,00<a style="margin-left: 20px; color: white;" href="detalhedoproduto.html">Detalhes</a></span>
           </div>
         </div>
-      </br>
+        <br />
         <div class="coluna">
-					<div id="three" class="botaol">
+          <div id="three" class="botaol">
             <img id="im2"src="png/dead pool.png">  
-            <span class="new badge red" data-badge-caption="">R$ 300,00<a href="detalhedoproduto.html">Detalhe</a></span>
+            <span class="new badge red" data-badge-caption="">R$ 300,00<a style="margin-left: 20px; color: white;" href="detalhedoproduto.html">Detalhes</a></span>
           </div>
           <div id="three" class="botaold">
             <img id="im2"src="png/hamburgao FINALIZADO.png">  
-            <span class="new badge red" data-badge-caption="">R$ 300,00<a href="detalhedoproduto.html">Detalhe</a></span>
+            <span class="new badge red" data-badge-caption="">R$ 300,00<a style="margin-left: 20px; color: white;" href="detalhedoproduto.html">Detalhes</a></span>
           </div>
           <div id="three" class="botaold">
             <img id="im2"src="png/cemitério do infinito logotipo 1.jpg"> 
-            <img  class=" responsive-img materialboxed" alt="" src="batman.jpg">
-            <span class="new badge red" data-badge-caption="">R$ 300,00<a href="detalhedoproduto.html">Detalhe</a></span>
+            <span class="new badge red" data-badge-caption="">R$ 300,00<a style="margin-left: 20px; color: white;" href="detalhedoproduto.html">Detalhes</a></span>
           </div>
         </div>
       </div>
 		</div>
     <script src="js/materialize.js"></script>
-      <script type="text/javascript" src="js/materialize.min.js"></script>
-      <script type="text/javascript" src="js/jquery.js"></script>
-      <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-      <script src="js/materialize.js"></script>
-      
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    
     <script>
       document.addEventListener('DOMContentLoaded', function() {
         var elems = document.querySelectorAll('.materialboxed');
@@ -145,25 +160,52 @@
       $(document).ready(function(){
         $('.materialboxed').materialbox();
       });
-
+      
       
     </script>
-   
-      <script src="js/init.js"></script>
-         <script type="text/javascript">
-
-          $(document).ready(function(){
-        $('.carousel-slider').carousel();
-           });
-      </script>
-   
+    
+    <script src="js/init.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.carousel');
+        var instances = M.Carousel.init(elems, options);
+      });
+    </script>
+    
   </body>
-</html>
+  </html>
+  
+<!---- <a class="btn-floating pulse"><i class="material-icons">menu</i></a>
+<a class="btn-floating btn-large pulse"><i class="material-icons">cloud</i></a>
+<a class="btn-floating btn-large cyan pulse"><i class="material-icons">edit</i></a>
+<p class="flow-text">I am Flow Text</p>
+<blockquote>
+        This is an example quotation that uses the blockquote tag.
+      </blockquote>-->
+<!--<div class="col s12 m8 offset-m2 l6 offset-l3">
+        <div class="card-panel grey lighten-5 z-depth-1">
+          <div class="row valign-wrapper">
+            <div class="col s2">
+              <img src="1.jpg" alt="" class="quadra responsive-img">  notice the "circle" class --
+            </div>
+            <div class="col s10">
+              <span class="black-text">
+                This is a square image. Add the "circle" class to it to make it appear circular.
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>-->
 
-<!-- <div class="coluna">
-<div id="three" class="botao">
-        <img id="im2"src="./imagens/download1.jpg">
-
+<!--<p class="geral" > 
+    Portifolio
+    
+</p>-->
+  
+  <!-- <div class="coluna">
+    <div id="three" class="botao">
+      <img id="im2"src="./imagens/download1.jpg">
+      
     </div>
     <div id="four" class="botao"></div>
     <div id="seven" class="botao"></div>
