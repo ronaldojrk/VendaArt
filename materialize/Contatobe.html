@@ -43,26 +43,38 @@
                     <form class="col s12">
                         <div class="row card-panel">
                             <div class="input-field col s6">
-                                <input type="text" placeholder="Digite Seu nome" id="nome">
-                                <label for="nome"></label>
+                                <input id="last_name" type="text" class="validate">
+                                <label for="last_name">Primeiro Nome</label>
                             </div>
                             <div class="input-field col s6">
-                                <input type="text" placeholder="Sobrenome" id="apelido">
-                                <label for="apelido"></label>
+                                <input type="text" id="apelido" class="validate">
+                                <label for="apelido">Sobrenome</label>
                             </div>
                             <div class="input-field col s12">
-                                <input type="email" placeholder="seu email" id="email">
-                                <label for="email"></label>
+                                <input type="email"  id="email" class="validate">
+                                <label for="email">Seu Email</label>
                             </div>
                             <div class="input-field col s12">
-                                <textarea id="mensagem" class="materialize-textarea" placeholder="Mensagem" rows="10" cols="40" maxlength="500"></textarea>
-                                <label for="mensagem"></label>
+                                <textarea id="mensagem" class="materialize-textarea validate" rows="10" cols="40" maxlength="500"></textarea>
+                                <label for="mensagem">Mensagem</label>
                             </div>
                         </div>
                         <button class="btn waves-effect waves-light" type="submit" name="action">Enviar</button>
                     </form>
                 </div>
             </div>
+    <script src="js/materialize.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
+
+        <script>
+            $(document).ready(function() {
+                M.updateTextFields();
+            });
+        </script>
 </body>
 
 </html>
